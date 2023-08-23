@@ -83,7 +83,6 @@ const sf = await Framework.create({
     account: walletAddress,
     providerOrSigner: provider
   });
-   // this.logInfo("ress",ethers.utils.formatUnits(res,"ether"));
   return ethers.utils.formatUnits(res,"ether");
     }catch(error){
       this.logInfo(`An error has occured at SuperFluidData ${error}`);
